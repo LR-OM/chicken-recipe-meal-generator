@@ -1,24 +1,32 @@
 .background-image{
     width: 100%;
     height: auto;
+    opacity: 0.5;
+    z-index: -1;
   }
 .container{
   position: relative;
   width: 100%;
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
+
 .content{
-  position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 24px;
     text-align: center;
+    z-index: 2;
 }
 footer{
     text-align: center;
     font-size: 20px;
     margin-top: 30px;
+    color: black;
+}
+
+a{
+color:#A1009C;
 }
