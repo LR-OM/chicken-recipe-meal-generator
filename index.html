@@ -16,13 +16,16 @@
     <img src="images/food.jpg" alt="vegetables in a bag" class="background-image" />
   </div>
   <div class="content">
+    <h1>Chicken recipe generator</h1>
     <main>
-      <form>
-        <input type="text" placeholder="what chicken recipe are you looking for?" autofocus required
-          autocomplete="off" />
-        <input type="submit" />
+      <div class="form-container">
+        <form id="chicken-recipe-generator">
+          <input type="text" placeholder="what chicken recipe are you looking for?" autofocus required
+            autocomplete="off" class="instructions" id="user-instructions" />
+          <input type="submit" class="submit-button" />
 
-      </form>
+        </form>
+        <small class="hint"> i.e: chicken soup, chicken pasta, etc </small>
     </main>
     <footer>
       <p>
