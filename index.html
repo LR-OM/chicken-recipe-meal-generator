@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Triodion&display=swap" rel="stylesheet">
@@ -19,13 +21,15 @@
     <h1>Chicken recipe generator</h1>
     <main>
       <div class="form-container">
-        <form id="chicken-recipe-generator">
+        <form id="recipe-generator-form">
           <input type="text" placeholder="what chicken recipe are you looking for?" autofocus required
             autocomplete="off" class="instructions" id="user-instructions" />
           <input type="submit" class="submit-button" />
 
         </form>
-        <small class="hint"> i.e: chicken soup, chicken pasta, etc </small>
+        <small class="hint"> i.e: chicken soup, parmesan chicken pasta, chicken casserole etc </small>
+      </div>
+      <div class="recipe hidden" id="recipe"></div>
     </main>
     <footer>
       <p>
